@@ -15,7 +15,7 @@ jobs:
         env:
           BACKEND_TOKEN: ${{ secrets.BACKEND_TOKEN }}
         run: |
-          curl -s -X POST https://cabanillas.net.pe/api/commits \
+          curl -s -X POST http://178.156.246.18:9090/api/commits \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $BACKEND_TOKEN" \
             -d "{
